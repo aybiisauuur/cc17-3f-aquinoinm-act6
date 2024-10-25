@@ -1,0 +1,1356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="30 Days Meal Ideas"
+            android:textColor="@color/text_color"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.151"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/appDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Meal ideas for when you don't know what to cook.
+            \nConsists of Breakfast, Lunch, or Dinner ideas."
+            android:textColor="@color/text_color"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.337"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/switchDarkMode"
+            android:layout_width="347dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:text="Dark Mode"
+            android:thumbTint="#929092"
+            android:buttonTint="#444365"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.453"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appDescription" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay1"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appTitle">
+
+            <TextView
+                android:id="@+id/day1Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 1: Pork Sinigang"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/sinigang_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/sinigang"/>
+
+            <TextView
+                android:id="@+id/day1Caption"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginBottom="30dp"
+                android:text="A comforting and delicious Filipino sour soup."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/sinigang_pic" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay2"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay1"
+            app:layout_constraintStart_toStartOf="@+id/cardDay1"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay1">
+
+            <TextView
+                android:id="@+id/day2Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 2: Spaghetti Aglio e Olio"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/aglio_olio_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/aglio_olio"/>
+
+            <TextView
+                android:id="@+id/day2Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginBottom="30dp"
+                android:text="A simple pasta recipe with a hint of garlic."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/aglio_olio_pic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay3"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#9996C7"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay2"
+            app:layout_constraintStart_toStartOf="@+id/cardDay2"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay2">
+
+            <TextView
+                android:id="@+id/day3Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 3: Sauteed Zucchini"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/sauteed_zucchini_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/sauteed_zucchini"/>
+
+            <TextView
+                android:id="@+id/day3Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginBottom="30dp"
+                android:text="A quick and healthy dish made by cooking tender zucchini slices in olive oil with garlic, offering a light, savory flavor. "
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/sauteed_zucchini_pic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay4"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay3"
+            app:layout_constraintStart_toStartOf="@+id/cardDay3"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay3">
+
+            <TextView
+                android:id="@+id/day4Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 4: Bibimbap"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/bibimbap_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/bibimbap"/>
+
+            <TextView
+                android:id="@+id/day4Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginBottom="30dp"
+                android:text="A Korean dish consisting of white rice topped with various vegetables and fried egg, mixed with gochujang sauce. "
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/bibimbap_pic" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay5"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay4"
+            app:layout_constraintStart_toStartOf="@+id/cardDay4"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay4">
+
+            <TextView
+                android:id="@+id/day5Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 5: Caesar Salad"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/caesar_salad_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/caesar_salad"/>
+
+            <TextView
+                android:id="@+id/day5Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginBottom="30dp"
+                android:text="A healthy salad dish consisting of romaine lettuce, croutons, Parmesan cheese, and Caesar dressing."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/caesar_salad_pic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay6"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay5"
+            app:layout_constraintStart_toStartOf="@+id/cardDay5"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay5">
+
+            <TextView
+                android:id="@+id/day6Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 6: Chicken Adobo"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chicken_adobo_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="43dp"
+                android:src="@drawable/chicken_adobo" />
+
+            <TextView
+                android:id="@+id/day6Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="245dp"
+                android:layout_marginBottom="30dp"
+                android:text="A Filipino dish with marinated chicken (or pork) cooked in soy sauce, vinegar, and garlic."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/chicken_adobo_pic" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay7"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay6"
+            app:layout_constraintStart_toStartOf="@+id/cardDay6"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay6">
+
+            <TextView
+                android:id="@+id/day7Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 7: Chopsuey"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chopsuey_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/chopsuey"/>
+
+            <TextView
+                android:id="@+id/day7Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="30dp"
+                android:text="A vibrant stir-fried vegetable dish often mixed with meat or seafood."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/chopsuey_pic" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay8"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay7"
+            app:layout_constraintStart_toStartOf="@+id/cardDay7"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay7">
+
+            <TextView
+                android:id="@+id/day8Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 8: Doenjang Jigae"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/doenjang_jigae_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/doenjang_jigae"/>
+
+            <TextView
+                android:id="@+id/day8Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="225dp"
+                android:layout_marginBottom="30dp"
+                android:text="A hearty Korean stew made with fermented soybean paste (doenjang), tofu, vegetables, and sometimes meat or seafood, offering a rich, savory, and umami-packed flavor."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/doenjang_jigae_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay9"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay8"
+            app:layout_constraintStart_toStartOf="@+id/cardDay8"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay8">
+
+            <TextView
+                android:id="@+id/day9Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 9: Chicken Cordon Bleu"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chicken_cordon_bleu_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/chicken_cordon_bleu"/>
+
+            <TextView
+                android:id="@+id/day9Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="225dp"
+                android:layout_marginBottom="30dp"
+                android:text="A classic breaded chicken dish stuffed with ham and cheese, baked or fried to golden perfection."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/chicken_cordon_bleu_pic"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay10"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay9"
+            app:layout_constraintStart_toStartOf="@+id/cardDay9"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay9">
+
+            <TextView
+                android:id="@+id/day10Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 10: Munggo Soup"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/munggo_soup_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="42dp"
+                android:src="@drawable/munggo"/>
+
+            <TextView
+                android:id="@+id/day10Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="245dp"
+                android:layout_marginBottom="30dp"
+                android:text="A Filipino dish made from sauteed mung beans simmered with garlic, onions, and tomatoes, often combined with pork or shrimp and leafy greens, resulting in a hearty, flavorful, and nutritious stew."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/munggo_soup_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay11"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay10"
+            app:layout_constraintStart_toStartOf="@+id/cardDay10"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay10">
+
+            <TextView
+                android:id="@+id/day11Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 11: Tortang Talong"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/tortang_talong_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/tortang_talong"/>
+
+            <TextView
+                android:id="@+id/day11Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginBottom="30dp"
+                android:text="Made from grilled eggplants, peeled and dipped in scrambled eggs then pan-fried until golden brown, and best paired with banana ketchup and warm rice."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/tortang_talong_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay12"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay11"
+            app:layout_constraintStart_toStartOf="@+id/cardDay11"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay11">
+
+            <TextView
+                android:id="@+id/day12Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 12: Chicken Macaroni Soup or Sopas"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chicken_soup_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/chicken_soup"/>
+
+            <TextView
+                android:id="@+id/day12Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="30dp"
+                android:text="A hearty soup consisting of vegetables, chicken and macaroni, combined with a flavorful broth often enriched with evaporated milk."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/chicken_soup_pic"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay13"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay12"
+            app:layout_constraintStart_toStartOf="@+id/cardDay12"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay12">
+
+            <TextView
+                android:id="@+id/day13Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 13: Ginisang Upo"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ginisang_upo_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ginisang_upo"/>
+
+            <TextView
+                android:id="@+id/day13Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="30dp"
+                android:text="A simple dish consisting of sauteed bottle gourd (upo) mixed with ground pork."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/ginisang_upo_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay14"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay13"
+            app:layout_constraintStart_toStartOf="@+id/cardDay13"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay13">
+
+            <TextView
+                android:id="@+id/day14Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 14: Kimchi Fried Rice"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/kimchi_fried_rice_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/kimchi_fried_rice"/>
+
+            <TextView
+                android:id="@+id/day14Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginBottom="30dp"
+                android:text="A flavorful dish made by stir-frying leftover rice, mixed with kimchi, Spam, and vegetables, often topped with fried egg."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/kimchi_fried_rice_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay15"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay14"
+            app:layout_constraintStart_toStartOf="@+id/cardDay14"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay14">
+
+            <TextView
+                android:id="@+id/day15Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 15: Chicken Wrap"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chicken_wrap_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/chicken_wrap"/>
+
+            <TextView
+                android:id="@+id/day15Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginBottom="30dp"
+                android:text="A simple, quick healthy dish consisting of pan-fried chicken, romaine lettuce, tomatoes and dressing, wrapped in a tortilla, perfect for on-the-go dining or as a snack."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/chicken_wrap_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay16"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay15"
+            app:layout_constraintStart_toStartOf="@+id/cardDay15"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay15">
+
+            <TextView
+                android:id="@+id/day16Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 16: Ratatouille"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ratatouille_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/ratatouille"/>
+
+            <TextView
+                android:id="@+id/day16Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="245dp"
+                android:layout_marginBottom="30dp"
+                android:text="A classic French dish made from sauteed eggplants, zucchini, bell pepper and tomatoes in olive oil, resulting in a homey and flavorful vegetable stew."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/ratatouille_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay17"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay16"
+            app:layout_constraintStart_toStartOf="@+id/cardDay16"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay16">
+
+            <TextView
+                android:id="@+id/day17Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 17: Sinigang na Salmon Belly"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/sinigang_na_salmon_belly_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/sinigang_na_salmon_belly"/>
+
+            <TextView
+                android:id="@+id/day17Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="185dp"
+                android:layout_marginBottom="30dp"
+                android:text="Made with tender salmon belly cooked in a tangy broth flavored with tamarind and enriched with a variety of vegetables, such as radish, eggplant, and water spinach, creating a comforting and delicious dish."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/sinigang_na_salmon_belly_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay18"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay17"
+            app:layout_constraintStart_toStartOf="@+id/cardDay17"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay17">
+
+            <TextView
+                android:id="@+id/day18Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 18: Garlic Parmesan Wings"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/garlic_parmesan_wings_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/garlic_parmesan_wings"/>
+
+            <TextView
+                android:id="@+id/day18Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginBottom="30dp"
+                android:text="Chicken wings fried to golden perfection, coated in buttery goodness and garlic, topped with parmesan cheese."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/garlic_parmesan_wings_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay19"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay18"
+            app:layout_constraintStart_toStartOf="@+id/cardDay18"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay18">
+
+            <TextView
+                android:id="@+id/day19Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 19: Kimchi Jigae"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/kimchi_jigae_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/kimchi_jigae"/>
+
+            <TextView
+                android:id="@+id/day19Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginBottom="30dp"
+                android:text="A Korean stew consisting of Kimchi, pork belly and tofu, offering comfort and warmth perfect for cold days."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/kimchi_jigae_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay20"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay19"
+            app:layout_constraintStart_toStartOf="@+id/cardDay19"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay19">
+
+            <TextView
+                android:id="@+id/day20Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 20: Creamy Mushroom Chicken"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/creamy_mushroom_chicken_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/mushroom_chicken"/>
+
+            <TextView
+                android:id="@+id/day20Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginBottom="30dp"
+                android:text="A rich and savory dish consisting of pan-fried chicken with sauteed mushrooms cooked in a rich, creamy sauce, topped with herbs and best eaten with warm rice."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/creamy_mushroom_chicken_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay21"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay20"
+            app:layout_constraintStart_toStartOf="@+id/cardDay20"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay20">
+
+            <TextView
+                android:id="@+id/day21Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 21: Pinakbet"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/pinakbet_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/pinakbet"/>
+
+            <TextView
+                android:id="@+id/day21Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="215dp"
+                android:layout_marginBottom="30dp"
+                android:text="A traditional Filipino dish consisting of various vegetables, such as ampalaya, squash, okra, string beans and eggplant, simmered in bagoong, often mixed with pork, creating a nutritious and flavorful dish."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/pinakbet_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay22"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay21"
+            app:layout_constraintStart_toStartOf="@+id/cardDay21"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay21">
+
+            <TextView
+                android:id="@+id/day22Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 22: Honey Garlic Chicken Wings"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/honey_garlic_chicken_wings_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/honey_garlic_chicken_wings"/>
+
+            <TextView
+                android:id="@+id/day22Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginBottom="30dp"
+                android:text="Fried chicken wings coated in a rich sauce consisting of honey, garlic, butter and soy sauce, creating a savory taste, garnished with parsley or onion leaves."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/pinakbet_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay23"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay22"
+            app:layout_constraintStart_toStartOf="@+id/cardDay22"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay22">
+
+            <TextView
+                android:id="@+id/day23Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 23: Lugaw"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/lugaw_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/lugaw"/>
+
+            <TextView
+                android:id="@+id/day23Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginBottom="30dp"
+                android:text="A Filipino rice porridge made from simmering rice in broth until it reaches a thick consistency, served with hard-boiled egg, fried garlic and patis (fish sauce), garnished with onion leaves, creating a warm and comfoting dish."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/lugaw_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay24"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay23"
+            app:layout_constraintStart_toStartOf="@+id/cardDay23"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay23">
+
+            <TextView
+                android:id="@+id/day24Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 24: Pork Giniling"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/pork_giniling_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/pork_giniling"/>
+
+            <TextView
+                android:id="@+id/day24Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginBottom="30dp"
+                android:text="Made from stir-frying ground pork in soy sauce, often adding vegetables such as potatoes and carrots to create a savory meal, best paired with white rice."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/pork_giniling_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay25"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay24"
+            app:layout_constraintStart_toStartOf="@+id/cardDay24"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay24">
+
+            <TextView
+                android:id="@+id/day25Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 25: Mushroom Soup"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/mushroom_soup_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/mushroom_soup"/>
+
+            <TextView
+                android:id="@+id/day25Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginBottom="30dp"
+                android:text="A creamy, savory soup made from sauteed mushrooms blended with broth and cream, flavored with garlic, onions and herbs, resulting in a rich and comforting soup perfect for a rainy day."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/mushroom_soup_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay26"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay25"
+            app:layout_constraintStart_toStartOf="@+id/cardDay25"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay25">
+
+            <TextView
+                android:id="@+id/day26Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 26: Sinigang na Bangus"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/sinigang_na_bangus_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/sinigang_na_bangus"/>
+
+            <TextView
+                android:id="@+id/day26Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="205dp"
+                android:layout_marginBottom="30dp"
+                android:text="A Filipino sour soup with bangus as the main protein, flavored with vegetables and tamarind, creating a tangy and comforting flavor."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/sinigang_na_bangus_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay27"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay26"
+            app:layout_constraintStart_toStartOf="@+id/cardDay26"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay26">
+
+            <TextView
+                android:id="@+id/day27Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 27: Sisig"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/sisig_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/sisig"/>
+
+            <TextView
+                android:id="@+id/day27Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginBottom="30dp"
+                android:text="A popular Filipino dish made from chopped and seasoned parts of grilled or boiled pork, typically the face and ears, mixed with onions and chili peppers, served sizzling on a hot plate, and often garnished with a squeeze of calamansi."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/sisig_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay28"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay27"
+            app:layout_constraintStart_toStartOf="@+id/cardDay27"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay27">
+
+            <TextView
+                android:id="@+id/day28Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 28: Stir Fried Tofu Bean Sprouts"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/stir_fried_tofu_bean_sprouts_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/stir_fried_tofu_bean_sprouts"/>
+
+            <TextView
+                android:id="@+id/day28Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginBottom="30dp"
+                android:text="A quick vegetarian dish feauring stir fried bean sprouts with tofu, often sauteed with vegetables such as beans and carrots along with soy sauce, enjoyed with rice as it delivers a delighftul combination of flavors."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/stir_fried_tofu_bean_sprouts_pic"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay29"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay28"
+            app:layout_constraintStart_toStartOf="@+id/cardDay28"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay28">
+
+            <TextView
+                android:id="@+id/day29Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 29: Tinola"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/tinola_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/tinola"/>
+
+            <TextView
+                android:id="@+id/day29Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="30dp"
+                android:text="A traditional Filipino dish made with chicken, ginger and a flavorful broth, enriched with green papaya or sayote and leafy vegetebales such as malunggay, creating a warm and comfoting dish."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/tinola_pic"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDay30"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/card_background"
+            app:layout_constraintEnd_toEndOf="@+id/cardDay29"
+            app:layout_constraintStart_toStartOf="@+id/cardDay29"
+            app:layout_constraintTop_toBottomOf="@+id/cardDay29">
+
+            <TextView
+                android:id="@+id/day30Meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Day 30: Tuna Pesto Pasta"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/tuna_pesto_pasta_pic"
+                android:layout_width="259dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/tuna_pesto_pasta"/>
+
+            <TextView
+                android:id="@+id/day30Caption"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginBottom="30dp"
+                android:text="A quick pasta dish made by tossing al dente pasta with canned tuna, pesto sauce, enhanced with garlic and parmesan cheese, resulting in a filling and flavorful dish."
+                android:textColor="@color/text_color"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@id/tuna_pesto_pasta_pic"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

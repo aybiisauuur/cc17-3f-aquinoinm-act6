@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="card_background">#444365</color> <!-- Dark theme card background color -->
+        <color name="text_color">#E5E0ED</color> <!-- Dark theme text color -->
+        <color name="colorPrimary">#BB86FC</color> <!-- Example primary color -->
+        <color name="colorPrimaryDark">#A18B95</color> <!-- Example primary dark color -->
+        <color name="colorAccent">#929092</color> <!-- Example accent color -->
+        <color name="window_background">#000000</color> <!-- Example window background -->
+</resources>

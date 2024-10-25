@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme._30DaysAppFinalNaTalaga" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/window_background</item>
+
+        <!-- Set the default card and text colors -->
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+</resources>
